@@ -5,6 +5,8 @@ import Signup from './Pages/Sign Up/Signup';
 import UpdatePatientProfile from './Pages/Patient/UpdatePatientProfile';
 import CurrentDoctors from './Pages/Patient/CurrentDoctors';
 import PrescriptionUpload from './Pages/PrescriptionUpload/PrescriptionUpload';
+import PrescriptionUpload2 from './Pages/PrescriptionUpload/PrescriptionUpload2';
+import PrescriptionUpload3 from './Pages/PrescriptionUpload/PrescriptionUpload3';
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,8 @@ function App() {
         <Route path="/updateprofile" element={<UpdatePatientProfile/>} />
         <Route path="/currentdoctors" element={<CurrentDoctors/>} />
         <Route path="/prescriptionupload" element={<PrescriptionUpload/>} />
+        <Route path="/prescriptionupload2" element={<PrescriptionUpload2/>} />
+        <Route path="/prescriptionupload3" element={<PrescriptionUpload3/>} />
       </Routes>
     </div>
   );
