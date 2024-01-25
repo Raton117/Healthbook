@@ -1,0 +1,47 @@
+.auth-form-container,
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text within labels and buttons */
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0.5rem;
+    flex-direction: column; /* Add this line to ensure column layout */
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7439db;
+  margin: 2px;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}

@@ -4,9 +4,12 @@ import {Route,Routes} from 'react-router-dom'
 import Signup from './Pages/Sign Up/Signup';
 import UpdatePatientProfile from './Pages/Patient/UpdatePatientProfile';
 import CurrentDoctors from './Pages/Patient/CurrentDoctors';
+import CreateNavbar from './Components/Navbar';
+
 function App() {
   return (
     <div className="App">
+      <CreateNavbar />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

@@ -17,7 +17,7 @@ const Signup = () => {
             <h2>Register</h2>
         <form className="register-form" onSubmit={handleSubmit}>
             <label htmlFor="name">Username</label>
-            <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="full Name" />
+            <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="Enter your username" />
             <label htmlFor="email">Email</label>
             <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
             <label htmlFor="password">Password</label>
@@ -26,7 +26,9 @@ const Signup = () => {
         </form>
 
         <div className="text-center">
-        <p>Already have an account? <Link to="/login">Login</Link></p>
+        <p>Already have an account?  <Link to="/login" style={{ color: 'white' }}>
+    Login
+  </Link></p>
       </div>
         </div>
   )
