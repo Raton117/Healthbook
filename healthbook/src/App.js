@@ -7,6 +7,7 @@ import CurrentDoctors from './Pages/Patient/CurrentDoctors';
 import PrescriptionUpload from './Pages/PrescriptionUpload/PrescriptionUpload';
 import PrescriptionUpload2 from './Pages/PrescriptionUpload/PrescriptionUpload2';
 import PrescriptionUpload3 from './Pages/PrescriptionUpload/PrescriptionUpload3';
+import Sidebar from './Pages/Sidebar';
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <Route path="/prescriptionupload" element={<PrescriptionUpload/>} />
         <Route path="/prescriptionupload2" element={<PrescriptionUpload2/>} />
         <Route path="/prescriptionupload3" element={<PrescriptionUpload3/>} />
+        <Route path="/" element={<Sidebar />} />
       </Routes>
     </div>
   );
