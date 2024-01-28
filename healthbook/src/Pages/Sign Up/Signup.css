@@ -1,4 +1,4 @@
-
+.auth-form-container,
 .login-form,
 .register-form {
   display: flex;
@@ -8,17 +8,14 @@
   padding: 1rem; /* Adjust padding as needed */
 }
 
-.auth-form-container {
-    
-  margin-top: 200px;
- 
-  padding: 5rem;
-  border: 1px solid white;
-  border-radius: 5px;
-  flex-direction: column; /* Add this line to ensure column layout */
-}
 @media screen and (min-width: 600px) {
-  
+  .auth-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0.5rem;
+    flex-direction: column; /* Add this line to ensure column layout */
+  }
 }
 
 label {

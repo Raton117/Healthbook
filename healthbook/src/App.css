@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+ 
   min-height: 100vh;
   color: white;
   background-color: rgb(8, 128, 128);
@@ -40,3 +40,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+
