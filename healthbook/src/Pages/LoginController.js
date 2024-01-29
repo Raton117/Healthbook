@@ -4,16 +4,19 @@ import CreateNavbar from "../Components/Navbar";
 import Login from "../Pages/Login/Login";
 
 const ParentComponent = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  let [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
     // Logic for handling successful login
-    setIsLoggedIn(true);
+    setIsLoggedIn(!isLoggedIn);
   };
 
   return (
     <div>
       <CreateNavbar isLoggedIn={isLoggedIn} />
+      {/* <Routes>
+        <Route path="/login" element={<Login handleLogin={handleLogin} />} />
+      </Routes> */}
     </div>
   );
 };
